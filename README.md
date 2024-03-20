@@ -10,7 +10,7 @@ Teams have used Pinelens to:
 - Help teams self-serve IT, Onboarding, HR, etc.
 
 ## System Design
-![System Design](https://github.com/vaibhawkhemka/ProtonDataLabs/blob/main/System-Design.png?raw=true)
+![System Design](https://github.com/vaibhawkhemka/ProtonDataLab/blob/main/System-Design.png?raw=true)
 
 <h3>Usage</h3>
 
@@ -21,9 +21,9 @@ Teams have used Pinelens to:
 Pinelens can easily be run locally (even on a laptop) or deployed on a virtual machine with a single
 `docker compose` command. 
 ```bash
-git clone (https://github.com/vaibhawkhemka/ProtonDataLabs.git)
-cd ProtonDataLabs/deployment/docker_compose
-docker-compose -f docker-compose.dev.yml -p pinelens-stack up -d --build --force-recreate
+git clone (https://github.com/vaibhawkhemka/ProtonDataLab.git)
+cd ProtonDataLab/deployment/docker_compose
+docker-compose -f docker-compose.dev.yml -p danswer-stack up -d --build --force-recreate
 ```
 4. This may take 15+ minutes depending on your internet speed.
 Addditionally, once the images have been pulled / built, the initial startup of the api_server may take some time (we download embedding models from HuggingFace to power the search). If you see This site can’t be reached in your browser despite all containers being up and running, check the api_server logs and make sure you see Application startup complete.
@@ -50,9 +50,9 @@ Server will now be running on http://localhost:3000.
    sudo yum install git
    ```
 4. Starting EC2 Server
-   git clone (https://github.com/vaibhawkhemka/ProtonDataLabs.git)
+   git clone (https://github.com/vaibhawkhemka/ProtonDataLab.git)
 
-   docker-compose -f docker-compose.dev.yml -p pinelens-stack up -d --build --force-recreate
+   docker-compose -f docker-compose.dev.yml -p danswer-stack up -d --build --force-recreate
 
 5. After waiting a few minutes (you can monitor the progress with docker logs pinelens-stack-api_server-1 -f; once you see a log for INFO: Application startup complete. then everything should be good to go).
 
@@ -64,7 +64,7 @@ Server will now be running on http://localhost:3000.
 * Slack integration to get answers and search results directly in Slack.
 
 
-## Other Noteable Benefits of Pinelens
+## Other Noteable Benefits 
 * Best in class Hybrid Search across all sources (BM-25 + prefix aware embedding models).
 * User Authentication with document level access management.
 * Admin Dashboard to configure connectors, document-sets, access, etc.
