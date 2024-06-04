@@ -10,7 +10,7 @@ Teams have used Pinelens to:
 - Help teams self-serve IT, Onboarding, HR, etc.
 
 ## System Design
-![System Design](https://github.com/vaibhawkhemka/ProtonDataLab/blob/main/System-Design.png?raw=true)
+![System Design](https://github.com/vaibhawkhemka/RAG-in-Production/blob/main/System-Design.png?raw=true)
 
 <h3>Usage</h3>
 
@@ -22,7 +22,7 @@ Pinelens can easily be run locally (even on a laptop) or deployed on a virtual m
 `docker compose` command. 
 ```bash
 git clone (https://github.com/vaibhawkhemka/RAG-in-Production.git)
-cd ProtonDataLab/deployment/docker_compose
+cd RAG-in-Production/deployment/docker_compose
 docker-compose -f docker-compose.dev.yml -p danswer-stack up -d --build --force-recreate
 ```
 4. This may take 15+ minutes depending on your internet speed.
@@ -50,7 +50,7 @@ Server will now be running on http://localhost:3000.
    sudo yum install git
    ```
 4. Starting EC2 Server
-   git clone (https://github.com/vaibhawkhemka/ProtonDataLab.git)
+   git clone (https://github.com/vaibhawkhemka/RAG-in-Production.git)
 
    docker-compose -f docker-compose.dev.yml -p danswer-stack up -d --build --force-recreate
 
