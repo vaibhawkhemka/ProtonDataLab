@@ -21,7 +21,7 @@ Teams have used Pinelens to:
 Pinelens can easily be run locally (even on a laptop) or deployed on a virtual machine with a single
 `docker compose` command. 
 ```bash
-git clone (https://github.com/vaibhawkhemka/ProtonDataLab.git)
+git clone (https://github.com/vaibhawkhemka/RAG-in-Production.git)
 cd ProtonDataLab/deployment/docker_compose
 docker-compose -f docker-compose.dev.yml -p danswer-stack up -d --build --force-recreate
 ```
